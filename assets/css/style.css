@@ -1,7 +1,6 @@
 /*
   Theme Name:  - Multipurpose HTML Template
   Author: Abdur Razzak
-  Support: developerrazzak@gmail.com
   Description: Multipurpose HTML Template
   Version: 1.0
 */
@@ -20,6 +19,8 @@ body {
 }
 .img {
   max-width: 100%;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 .f-left {
@@ -34,8 +35,6 @@ body {
 a,
 .button {
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -151,16 +150,37 @@ label {
   color: #555555;
   font-size: 14px;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+*::-webkit-input-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+*:-ms-input-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+*::-ms-input-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 *::placeholder {
   color: #555555;
   font-size: 14px;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .button {
   display: inline-block;
   background: #b3ff00;
   border: 2px solid #b3ff00;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 60px;
   padding: 12px 60px;
@@ -237,13 +257,18 @@ label {
   left: 0;
   z-index: 999;
   height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 /*menu area css here*/
 .main-menu ul li {
   display: inline-block;
   margin-right: 32px;
+  margin-top: 10px;
 }
 .main-menu ul li a {
   display: block;
@@ -253,6 +278,8 @@ label {
   font-size: 16px;
   line-height: 18px;
   color: #f8f4ff;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .main-menu ul li:hover a {
@@ -263,9 +290,15 @@ label {
   line-height: 18px;
   color: #b3ff00;
   border: 1px solid #b3ff00;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
   padding: 8px 16px;
 }
@@ -298,6 +331,7 @@ label {
 .slider-content .slider-select select {
   background: #ffffff;
   border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 60px;
   width: 232px;
@@ -315,7 +349,11 @@ label {
   background-repeat: no-repeat;
   background-position: center center;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .about-content p {
@@ -327,7 +365,11 @@ label {
 .about-area2 {
   background-size: cover;
   height: 625px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -336,7 +378,11 @@ label {
 .como-functiona-content {
   height: 680px;
   background-position: top right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -436,6 +482,8 @@ label {
 .brand-carousel .owl-nav button {
   position: absolute;
   top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   left: -40px;
   width: 50px;
@@ -445,6 +493,8 @@ label {
   font-size: 22px;
   z-index: 99;
   border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .brand-carousel .owl-nav .owl-next {
@@ -465,14 +515,25 @@ label {
   line-height: 32px;
   color: #7e7d9c;
 }
+.pricing_table_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
 .pricing-table {
   background: #ffffff;
   border: 1px solid #b3ff00;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 25px;
 }
 .pricing-table.active {
+  -webkit-box-shadow: -30px 30px 60px rgba(65, 95, 139, 0.1);
   box-shadow: -30px 30px 60px rgba(65, 95, 139, 0.1);
 }
 .pricing-heading h3 {
@@ -481,7 +542,7 @@ label {
   line-height: 41px;
   text-align: center;
   color: #0d0d0d;
-  margin-bottom: 30px;
+  height: 90px;
 }
 .pricing-icon {
   margin-bottom: 30px;
@@ -516,9 +577,15 @@ label {
   width: 280px;
   height: 45px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 15px;
   font-weight: bold;
@@ -548,6 +615,7 @@ label {
 .accordion-item {
   margin-bottom: 25px;
   border: none;
+  border-radius: 10px !important;
 }
 .accordion-header {
   border: none;
@@ -555,6 +623,7 @@ label {
 }
 .accordion-button:not(.collapsed) {
   background-color: #b3ff00;
+  -webkit-box-shadow: none;
   box-shadow: none;
   font-weight: 500;
   font-size: 16px;
@@ -563,6 +632,7 @@ label {
 }
 .accordion-button:focus {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .accordion-button {
@@ -572,11 +642,12 @@ label {
   font-size: 16px;
   line-height: 18px;
   color: #343352;
+  padding-right: 45px;
 }
-.accordion-button::after {
+.accordion-button:after {
   display: none;
 }
-.accordion-button::before {
+.accordion-button:before {
   position: absolute;
   content: "";
   background-image: url(../img/faq/faq-plus-icon.png);
@@ -586,7 +657,7 @@ label {
   background-size: 100%;
   right: 20px;
 }
-.accordion-button:not(.collapsed)::before {
+.accordion-button:not(.collapsed):before {
   background-image: url(../img/faq/faq-minus-icon.png);
 }
 /*==============------------------------- 1. Footer AREA CSS ------------------------================*/
@@ -620,9 +691,15 @@ label {
   font-size: 16px;
   line-height: 32px;
   border: 1px solid #b3ff00;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
   padding: 4px 24px;
   margin-bottom: 35px;

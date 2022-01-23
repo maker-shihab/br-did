@@ -1,144 +1,144 @@
 /* Normal desktop(xl) :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
-
 }
-
 
 /* Normal desktop(lg) :992px. */
 @media (min-width: 992px) and (max-width: 1200.99px) {
-.section-title h2 {
+  .section-title h2 {
     font-size: 35px;
+  }
+  .business-area {
+    height: 520px;
+  }
+  .business-content h2 {
+    font-size: 60px;
+  }
+  .business-content p {
+    font-size: 22px;
+  }
+  .como-functiona-content {
+    height: auto;
+  }
 }
-.business-area {
-	height: 520px;
-}
-.business-content h2 {
-font-size: 60px;
-}
-.business-content p {
-	font-size: 22px;
-}
-.como-functiona-content {
-	height: auto;
-}
-}
-
 
 /* Tablet desktop(md) :768px. */
 @media (min-width: 768px) and (max-width: 991.99px) {
-.business-area {
-	height: 520px;
+  .business-area {
+    height: 520px;
+  }
+  .business-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  .business-content h4 {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+  .business-content p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .como-functiona-content {
+    height: auto;
+  }
+  .about-img {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 530px;
+  }
+  .button {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
-.business-content h2 {
-	font-size: 45px;
-	margin-bottom: 15px;
-}
-.business-content h4 {
-	font-size: 25px;
-	line-height: 1;
-	margin-bottom: 15px;
-}
-.business-content p {
-	font-size: 18px;
-	line-height: 25px;
-	margin-bottom: 0;
-}
-.como-functiona-content {
-	height: auto;
-}
-.about-img {
-	justify-content: center;
-	height: 530px;
-}
-.button {
-	font-size: 14px;
-	line-height: 1;
-}
-
-}
-
 
 /* small mobile(xs) :320px. */
 @media (max-width: 767.99px) {
-	.slider-content h1 {
-	font-size: 40px;
-	line-height: 1;
-}
-.slider-content p {
-	font-size: 18px;
-}
-.business-area {
-	background-image: none;
-	background: #1f1f35;
-	height: auto;
-	padding: 50px 0;
-}
-.business-content h2 {
-	font-size: 50px;
-}
-.slider-content .slider-select select {
-	width: 100%;
-	margin-bottom: 25px
-}
-.slider-btn .button{
-	display: block;
-}
-.slider-select {
-	display: block!important;
-}
-.section-title h2 {
-	font-size: 28px;
-	line-height: 1.2;
-}
-.section-title span {
-	font-size: 16px;
-}
-.como-functiona-content {
-	height: auto;
-}
-.section-title2 p {
-	font-size: 16px;
-	line-height: 25px;
-}
-.faq-content h2 {
-	font-size: 35px;
-	line-height: 1;
-}
-.about-area2 {
-	height: auto;
-}
-.about-img {
-	height: auto;
-}
-.pricing-heading h3 {
-	font-size: 22px;
-	line-height: 25px;
-}
-.price h3 {
-	font-size: 28px;
-	line-height: 1;
-	margin-bottom: 30px;
-}
-.pricing-btn .button {
-	font-size: 13px;
-}
-.single-footer-widget .footer-widget-contact a {
-	font-size: 25px;
-	line-height: 1;
-}
-.footer-copyright-text {
-	display: block !important;
-	text-align: center;
-}
-.brand-items {
-	display: inline-block;
-}
-.sec-margin{
-	margin-top: 100px
-}
+  .slider-content h1 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .slider-content p {
+    font-size: 18px;
+  }
+  .business-area {
+    background-image: none;
+    background: #1f1f35;
+    height: auto;
+    padding: 50px 0;
+  }
+  .business-content h2 {
+    font-size: 50px;
+  }
+  .slider-content .slider-select select {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .slider-btn .button {
+    display: block;
+  }
+  .slider-select {
+    display: block !important;
+  }
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .section-title span {
+    font-size: 16px;
+  }
+  .como-functiona-content {
+    height: auto;
+  }
+  .section-title2 p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .faq-content h2 {
+    font-size: 35px;
+    line-height: 1;
+  }
+  .about-area2 {
+    height: auto;
+  }
+  .about-img {
+    height: auto;
+  }
+  .pricing-heading h3 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .price h3 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  .pricing-btn .button {
+    font-size: 13px;
+  }
+  .single-footer-widget .footer-widget-contact a {
+    font-size: 25px;
+    line-height: 1;
+  }
+  .footer-copyright-text {
+    display: block !important;
+    text-align: center;
+  }
+  .brand-items {
+    display: inline-block;
+  }
+  .sec-margin {
+    margin-top: 100px;
+  }
+  .pricing_table_content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 /* Large Mobile(sm) :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-
 }
